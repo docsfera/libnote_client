@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react'
+import 'babel-polyfill'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Aside from "./components/Aside/Aside"
