@@ -1,0 +1,37 @@
+.folders-section
+  width: 65vw
+  margin-bottom: 45px
+  .folders-wrapper
+    display: flex
+    justify-content: space-between
+  .folders
+    //width: 840px // В зависимости от размера экрана
+    display: flex
+    .folders-container
+      overflow: hidden
+      .itemser
+        display: flex
+      .folder-skeleton
+        animation: fade 1s linear infinite alternate
+        min-width: 180px
+        height: 155px
+        border-radius: 5px
+        margin-right: 24px
+        margin-bottom: 20px
+        //padding: 10px 14px 0 10px
+        box-sizing: border-box
+
+        background-repeat: no-repeat
+        background-image: linear-gradient(rgb(72,72,72) 20px, rgba(0,0,0,0) 0), radial-gradient(circle 30px, rgb(72,72,72) 30px, rgba(0,0,0,0) 0), radial-gradient(circle 10px, rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(56,56,56) 100%, rgba(0,0,0,0) 0%)
+
+
+
+        background-size: 140px 30px, 60px 60px, 20px 20px, 30px 30px, 100% 100%
+
+        background-position: 20px 92%, 50% 45%, calc(100% - 14px) 10px, 10px 10px, 0 0
+
+@keyframes fade
+  from
+    opacity: .4
+  to
+    opacity: 1

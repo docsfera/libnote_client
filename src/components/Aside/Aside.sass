@@ -1,0 +1,40 @@
+.aside
+  font-family: "RFDewiExtended", sans-serif
+  color: white
+  background: #282828
+  min-height: 100vh
+  .logo
+    font-size: 2em
+    margin: 33px 0 38px 26px
+  .menu
+    .active
+      background: #333333
+    .menu-item
+      display: flex
+      align-items: center
+      padding-left: 42px
+      height: 60px
+      color: white
+      text-decoration: none
+      &:hover
+        background: #333333
+      .name-menu-item
+        &:before
+          display: inline-block
+          position: relative
+          top: 5px
+          right: 10px
+          content: " "
+      .main-item
+        &:before
+          content: url("../../../public/images/My Page.svg")
+      .book-item
+        &:before
+          top: 3px
+          content: url("../../../public/images/Book.svg")
+      .note-item
+        &:before
+          content: url("../../../public/images/My Page.svg")
+      .settings-item
+        &:before
+          content: url("../../../public/images/Settings.svg")

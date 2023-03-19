@@ -1,0 +1,51 @@
+#viewerContainer
+  width: 100%
+  position: absolute
+  background: #333333
+  z-index: 2
+
+  #pageContainer
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.fixed-button
+  cursor: pointer
+  position: fixed
+  z-index: 3
+  width: 40px
+  height: 40px
+  border-radius: 100%
+.exit
+  width: 20px
+  height: 20px
+  left: 20px
+  top: 20px
+  background: url("../../../public/images/exitIcon.svg") center no-repeat
+.getter-aside
+  z-index: 44
+  transition: 1s
+  right: 20px
+  top: 20px
+  background: url("../../../public/images/ArrowGetPdfAside.svg") no-repeat center
+
+.getter-aside-active
+  right: 340px
+  transform: rotateY(180deg)
+  //background: url("../../../public/images/ArrowHidePdfAside.svg") no-repeat center
+
+
+.getter-note-creator
+  transition: .5s
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 60px
+  height: 60px
+  right: 40px
+  bottom: 20px
+  background: #535353
+  &:hover
+    background: #737373
+    transform: scale(1.1)
+

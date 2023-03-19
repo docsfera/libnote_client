@@ -1,0 +1,102 @@
+.auth{ // TODO: fix
+  display: flex;
+  min-height: 100vh;
+  //max-width: 1020px; // TODO: расположить по центру для больших экранов?
+  //background: white !important;
+}
+.auth-image{
+  min-height: 100vh;
+  width: 50%;
+  background: #232323;
+}
+.auth-container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 50%;
+  background: #333333;
+
+}
+.auth-inputs{
+  display: flex;
+  align-self: center;
+  //height: 500px;
+  flex-direction: column;
+  //margin-top: 160px;
+  width: 390px;
+}
+.name-section{
+  align-self: center;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.input-section{
+  margin-bottom: 28px;
+}
+.error{
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: red;
+  font-size: 0.9em;
+
+  margin-bottom: 4px;
+}
+.name-input{
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 0.8em;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+.input{
+  box-sizing: border-box;
+  height: 48px;
+  width: 100%;
+  background: #232323;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.input-error{
+  border: 1px solid red;
+}
+
+
+.create-account{
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  background: #FD3162;
+  cursor: pointer;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.create-account:hover{
+  background: #FD3162;
+
+}
+.auth-wrap{
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+
+}

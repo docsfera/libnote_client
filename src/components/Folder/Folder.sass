@@ -1,0 +1,50 @@
+.folder-loading
+  opacity: .6
+  pointer-events: none
+.folder
+  display: flex
+  flex-direction: column
+  min-width: 180px
+  height: 155px
+  background: #282828
+  border-radius: 5px
+  margin-right: 24px
+  margin-bottom: 20px
+  padding: 10px 14px 0 10px
+  box-sizing: border-box
+  .folder-info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 10px
+    .folder-count
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 0.8em
+      font-weight: 400
+      width: 30px
+      height: 30px
+      background: #333333
+      border-radius: 5px
+      color: rgba(255, 255, 255, 0.7)
+  .folder-image
+    cursor: pointer
+    align-self: center
+    width: 50px
+    height: 42px
+    background: url("../../../public/images/folder.svg")
+    margin-bottom: 16px
+  .folder-name
+    align-self: center
+    font-size: 0.9em
+    //font-weight: 600
+  &:hover
+    transition: 0.5s
+    background: #333333
+    .folder-count
+      transition: 0.5s
+      background: #434343
+    .folder-image
+      transition: 0.5s
+      background: url("../../../public/images/folder-active.svg")

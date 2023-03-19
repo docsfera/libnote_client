@@ -1,0 +1,47 @@
+.book-aside
+  overflow: auto
+  display: flex
+  align-content: center
+  flex-direction: column
+  font-family: Inter, sans-serif // TODO: repeat!
+  font-weight: 600
+  transition: 1s
+  z-index: 4 //TODO: preventDefault() !
+  position: fixed
+  right: -390px // + 2padding
+  height: 100vh
+  width: 350px
+  padding: 20px
+  background: #232323
+  .book-aside-settings
+    margin-top: 10px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-content: end
+    align-items: end
+    .book-aside-input
+      box-sizing: border-box
+      font-family: Inter, sans-serif // TODO: repeat!
+      margin-top: 15px
+      margin-bottom: 20px
+      display: block
+      width: 70%
+      min-height: 30px
+      border: none
+      border-radius: 5px
+      background: #333333
+      outline: none
+      color: #F8F9FA
+      font-weight: 500
+      padding-left: 10px
+      padding-right: 40px
+
+      background-image: url("../../../public/images/find-input.svg")
+      background-position: 95%
+      background-repeat: no-repeat
+
+
+.book-aside-active
+  right: 0
+

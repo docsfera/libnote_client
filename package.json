@@ -1,0 +1,81 @@
+{
+  "name": "libnote",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "@apollo/client": "^3.7.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "bcryptjs": "^2.4.3",
+    "classnames": "^2.3.2",
+    "cors": "^2.8.5",
+    "cyrillic-to-translit-js": "^3.2.1",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "express-validator": "^6.14.2",
+    "express-fileupload": "^1.4.0",
+    "graphql": "^16.6.0",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-sass": "^8.0.0",
+    "pdfjs-dist": "^3.0.279",
+    "pg": "^8.8.0",
+    "react": "^18.2.0",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.6",
+    "ts-node": "^10.9.1",
+    "typeface-lato": "^1.1.13",
+    "typeface-roboto": "^1.1.13",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "cd src/server && node --loader ts-node/esm app.ts --ignore client"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "type": "module",
+  "compilerOptions": {
+    "isolatedModules": true,
+    "module": "nodenext"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@types/express-validator": "^3.0.0",
+    "@types/styled-components": "^5.1.26",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express-fileupload": "^1.4.1",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/pg": "^8.6.5"
+  }
+}

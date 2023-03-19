@@ -1,0 +1,87 @@
+.book-settings-wrapper
+  display: flex
+  font-family: Inter, sans-serif
+  .book-settings
+    padding-left: 50px
+    color: white
+    width: 365px
+
+    h2
+      padding: 0
+      margin: 0 0 8px 0
+      font-weight: 600
+      font-size: 1.5em
+      outline: none
+    .count-notes-delete-book
+      display: flex
+      justify-content: space-between
+      margin-bottom: 14px
+      .delete-book
+        cursor: pointer
+        font-size: .9em
+        color: #D0284F
+        &:hover
+          color: #BC2448
+      .count-notes
+        font-size: .9em
+        color: #484848
+
+
+    .book-name
+      font-weight: 600
+      opacity: .8
+      font-size: .8em
+      padding-bottom: 5px
+
+    .book-name-input
+      height: 35px
+      width: 350px
+      background: #282828
+      outline: none
+      border: none
+      margin-bottom: 25px
+      color: #F8F9FA
+      font-weight: 500
+      padding-left: 10px
+    .buttons
+      display: flex
+      justify-content: space-between
+    .button
+      width: 150px
+      height: 40px
+      border-radius: 5px
+      font-size: 1em
+      border: none
+      font-weight: 600
+      color: #F8F9FA
+      cursor: pointer
+    .button-exit
+      background: #FD3162
+      &:hover
+        background: #CB274D
+    .button-create
+      background: #007BFF
+      &:hover
+        background: #0063CD
+  .book-image
+    margin-top: 10px
+    margin-left: 60px
+
+    .image
+      transition: 0.5s
+      height: 220px
+      align-self: center
+      transform: rotateX(180deg)
+      margin-bottom: 4px
+      cursor: pointer
+      &:hover
+        transition: 0.5s
+        transform: scale(1.05) rotateX(180deg)
+    .change-book-image
+      text-align: center
+      color: #484848
+      font-weight: 600
+      font-size: .9em
+      cursor: pointer
+      &:hover
+        color: #383838

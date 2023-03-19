@@ -1,0 +1,57 @@
+/*213*/
+
+@font-face {
+  font-family: "RFDewiExtended";
+  src: local("RFDewiExtended"),
+  url("./fonts/RFDewiExtended/RFDewiExtended-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./fonts/Inter/Inter-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./fonts/Inter/Inter-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./fonts/Inter/Inter-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+Inter-ExtraLight
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.smoke{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: rgba(35, 35, 35, 0.8);
+  display: none;
+}
+

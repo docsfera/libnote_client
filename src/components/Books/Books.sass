@@ -1,0 +1,107 @@
+.canvas
+  display: none
+.books-container
+  padding-left: 50px
+  .books-info
+    font-family: Inter
+    font-weight: 600
+    color: white
+    .name-section
+      font-size: 1.5em
+      margin-bottom: 4px
+    .section-count
+      font-size: 0.8em
+      opacity: 0.5
+      padding-bottom: 30px
+
+  .books
+    width: 800px //TODO: for wrap!! 1080x720???
+    display: flex
+    flex-wrap: wrap
+
+
+  #drop-area
+    transition: 0.5s
+    height: 170px
+    width: 130px
+    margin: 25px
+    border: 2px dashed #434343
+    background: url('../../../public/images/downloadBook.svg') no-repeat center
+    border-radius: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+    &:hover //TODO: dont repeat
+      transition: 0.5s
+      border: 2px dashed #636363
+      background: url('../../../public/images/downloadBookActive.svg') no-repeat center
+
+
+  #drop-area.highlight
+    transition: 0.5s
+    border: 2px dashed #636363
+    background: url('../../../public/images/downloadBookActive.svg') no-repeat center
+  #drop-area.error
+    transition: 0.5s
+    border: 2px dashed #FD3162
+    background: url('../../../public/images/downloadBookError.svg') no-repeat center
+
+
+  p
+    margin-top: 0
+
+  .my-form
+    margin-bottom: 10px
+
+  #gallery
+    margin-top: 10px
+
+  #gallery img
+    width: 150px
+    margin-bottom: 10px
+    margin-right: 10px
+    vertical-align: middle
+
+  .button
+    display: inline-block
+    padding: 10px
+    background: #ccc
+    cursor: pointer
+    border-radius: 5px
+    border: 1px solid #ccc
+
+  .button:hover
+    background: #ddd
+
+  #fileElem
+    cursor: pointer
+    opacity: 0
+    width: 100%
+    height: 100%
+  .loading-book
+    height: 170px
+    width: 130px
+    margin: 25px
+    background: red
+  .book-skeleton
+    animation: fade 1s linear infinite alternate
+    min-width: 130px
+    height: 170px
+    border-radius: 5px
+    margin: 25px
+    box-sizing: border-box
+
+    background-repeat: no-repeat
+    background-image: linear-gradient(rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(72,72,72) 30px, rgba(0,0,0,0) 0), linear-gradient(rgb(56,56,56) 100%, rgba(0,0,0,0) 0%)
+
+
+
+    background-size: 100px 10px, 100px 10px, 100px 10px, 100px 10px, 100px 10px, 100px 10px, 100px 10px, 100% 100%
+
+    background-position: 15px 140px, 15px 120px, 15px 100px, 15px 80px, 15px 60px, 15px 40px, 15px 20px, 0 0
+
+@keyframes fade
+  from
+    opacity: .4
+  to
+    opacity: 1

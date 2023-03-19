@@ -1,0 +1,46 @@
+.note
+  font-family: Inter, sans-serif
+  font-weight: 600
+  color: white
+  width: 100% //65vw
+  background: #282828
+  margin-bottom: 12px
+  //padding: 21px 24px 21px 24px
+  border-radius: 5px
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35)
+
+  .note-wrapper
+    padding: 21px 24px 21px 24px
+
+    .note-info
+      display: flex
+      justify-content: space-between
+      margin-bottom: 8px
+      .note-name
+        font-size: 18px //TODO: em!
+        overflow: hidden
+      .note-book
+        font-weight: 300
+        font-size: 11px // TODO: em!
+    .note-content
+      opacity: 0.7
+      //font-family: Roboto, serif
+      font-size: 14px // TODO: em!
+      font-weight: 300
+      line-height: 21px // TODO:em!
+      margin-bottom: 10px
+    .note-time
+      color: #828282
+      //font-family: Lato // TODO: lato?
+      font-size: 12px // TODO: em!
+      font-weight: 400
+
+  &:hover
+    transition: 0.5s
+    background: #383838
+.not-clicked
+  opacity: 0.5
+  pointer-events: none
+.loading
+  opacity: .6
+  pointer-events: none
