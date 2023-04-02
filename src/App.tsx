@@ -18,7 +18,7 @@ import UserSettings from "./components/UserSettings/UserSettings"
 function App() {
 
     const go = (value: any) => {
-        if(value.userInfo.token){
+        if(true){
             return <div className="App">
                 <Aside/>
                 <Routes>
@@ -41,6 +41,7 @@ function App() {
     }
 
     return (
+
         <AuthProvider>
             <AuthContext.Consumer>
                 {value => go(value)}
