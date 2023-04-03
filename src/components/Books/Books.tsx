@@ -8,6 +8,7 @@ import CyrillicToTranslit from "cyrillic-to-translit-js"
 import SectionInfo from "../SectionInfo/SectionInfo"
 import {BookType} from "../../types/types"
 import {AuthContext} from "../../AuthProvider"
+import withAside from "../../HOC/withAside"
 
 const pdfjsLib = require("pdfjs-dist/build/pdf")
 const pdfjsViewer = require("pdfjs-dist/web/pdf_viewer")
@@ -194,4 +195,4 @@ const Books = () => {
     )
 }
 
-export default Books
+export default withAside(Books)

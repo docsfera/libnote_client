@@ -7,6 +7,7 @@ import NewNotes from "../NewNotes/NewNotes"
 import {AuthContext} from "../../AuthProvider"
 import {useQuery, gql} from '@apollo/client'
 import {NoteType} from "../../types/types"
+import withAside from "../../HOC/withAside"
 
 const GET_ALL_NOTES = gql`
     query getAllNotes($userid: ID) {
@@ -39,4 +40,4 @@ const Main = () => {
         </div>
     )
 }
-export default Main
+export default withAside(Main)
