@@ -30,7 +30,7 @@ const Main = () => {
     const numOfNotes = data?.getAllNotes.length
 
     return (
-        <div>
+        <div className="container">
             <Header/>
             <div className="main">
                 <NewFolders numOfNotes={numOfNotes}/>
