@@ -195,4 +195,4 @@ const Books = () => {
     )
 }
 
-export default withAside(Books)
+export default Books

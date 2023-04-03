@@ -20,7 +20,10 @@ function App() {
     const go = (value: any) => {
         if(true){
             return <div className="App">
-                <Main/>
+                <Routes>
+                    <Route path="/" element={<Books/>}/>
+                </Routes>
+                {/*<Main/>*/}
                 {/*<Routes>*/}
                 {/*    <Route path='/' element={<Main/>}/>*/}
                 {/*    <Route path='/books' element={<Books/>}/>*/}
