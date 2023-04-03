@@ -12,8 +12,8 @@ p{
 /*  justify-content: space-between;*/
 /*}*/
 .App{
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  /*display: grid;*/
+  /*grid-template-columns: 1fr 4fr;*/
 
   /*grid-template-areas:*/
   /*        "A A B B   B B B B   B B B B"*/

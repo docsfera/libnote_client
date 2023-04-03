@@ -18,24 +18,22 @@ import UserSettings from "./components/UserSettings/UserSettings"
 function App() {
 
     const go = (value: any) => {
-        if(true){
+        if(value?.userInfo?.token){
             return <div className="App">
-                <Routes>
-                    <Route path="/" element={<Books/>}/>
-                </Routes>
+                <Aside/>
                 {/*<Main/>*/}
-                {/*<Routes>*/}
-                {/*    <Route path='/' element={<Main/>}/>*/}
-                {/*    <Route path='/books' element={<Books/>}/>*/}
-                {/*    /!*<Route path='/notes' element={Notes}/>*!/*/}
-                {/*    /!*<Route path='/folders' element={Folders}/>*!/*/}
-                {/*    /!*<Route path='/pdf-viewer/:userId' element={PdfViewer}/>*!/*/}
-                {/*    /!*<Route path='/note-creator' element={NoteCreator}/>*!/*/}
-                {/*    /!*<Route path='/note-creator/:id' component={NoteCreator}/>*!/*/}
-                {/*    /!*<Route path='/folder-notes/:id' component={FolderNotes}/>*!/*/}
-                {/*    /!*<Route path='/book-settings/:id' component={BookSettings}/>*!/*/}
-                {/*    /!*<Route path='/settings' component={UserSettings}/>*!/*/}
-                {/*</Routes>*/}
+                <Routes>
+                    <Route path='/' element={<Main/>}/>
+                    {/*<Route path='/books' element={<Books/>}/>*/}
+                    {/*<Route path='/notes' element={Notes}/>*/}
+                    {/*<Route path='/folders' element={Folders}/>*/}
+                    {/*<Route path='/pdf-viewer/:userId' element={PdfViewer}/>*/}
+                    {/*<Route path='/note-creator' element={NoteCreator}/>*/}
+                    {/*<Route path='/note-creator/:id' element={NoteCreator}/>*/}
+                    {/*<Route path='/folder-notes/:id' element={FolderNotes}/>*/}
+                    {/*<Route path='/book-settings/:id' element={BookSettings}/>*/}
+                    {/*<Route path='/settings' element={UserSettings}/>*/}
+                </Routes>
             </div>
         }else{
             return <AuthWrapper/>
