@@ -20,18 +20,19 @@ function App() {
     const go = (value: any) => {
         if(true){
             return <div className="App">
-                <Routes>
-                    <Route path='/' element={<Main/>}/>
-                    <Route path='/books' element={<Books/>}/>
-                    {/*<Route path='/notes' element={Notes}/>*/}
-                    {/*<Route path='/folders' element={Folders}/>*/}
-                    {/*<Route path='/pdf-viewer/:userId' element={PdfViewer}/>*/}
-                    {/*<Route path='/note-creator' element={NoteCreator}/>*/}
-                    {/*<Route path='/note-creator/:id' component={NoteCreator}/>*/}
-                    {/*<Route path='/folder-notes/:id' component={FolderNotes}/>*/}
-                    {/*<Route path='/book-settings/:id' component={BookSettings}/>*/}
-                    {/*<Route path='/settings' component={UserSettings}/>*/}
-                </Routes>
+                <Main/>
+                {/*<Routes>*/}
+                {/*    <Route path='/' element={<Main/>}/>*/}
+                {/*    <Route path='/books' element={<Books/>}/>*/}
+                {/*    /!*<Route path='/notes' element={Notes}/>*!/*/}
+                {/*    /!*<Route path='/folders' element={Folders}/>*!/*/}
+                {/*    /!*<Route path='/pdf-viewer/:userId' element={PdfViewer}/>*!/*/}
+                {/*    /!*<Route path='/note-creator' element={NoteCreator}/>*!/*/}
+                {/*    /!*<Route path='/note-creator/:id' component={NoteCreator}/>*!/*/}
+                {/*    /!*<Route path='/folder-notes/:id' component={FolderNotes}/>*!/*/}
+                {/*    /!*<Route path='/book-settings/:id' component={BookSettings}/>*!/*/}
+                {/*    /!*<Route path='/settings' component={UserSettings}/>*!/*/}
+                {/*</Routes>*/}
             </div>
         }else{
             return <AuthWrapper/>
