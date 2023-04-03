@@ -40,4 +40,4 @@ const Main = () => {
         </div>
     )
 }
-export default withAside(Main)
+export default Main
