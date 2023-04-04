@@ -12,12 +12,12 @@ const AuthWrapper = () => {
 
     return (
         <div className="auth">
-            <div className="auth-image"> </div>
+            <div className="auth-image "> </div>
             <div className="auth-container">
                 {isShowRegistration ? <Registration changeAuthType={changeAuthType}/> : <Auth changeAuthType={changeAuthType}/>}
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default AuthWrapper;
+export default AuthWrapper

@@ -1,6 +1,9 @@
 .auth{ // TODO: fix
   display: flex;
   min-height: 100vh;
+  @media (max-width: 1024px) {
+    display: block;
+  }
   //max-width: 1020px; // TODO: расположить по центру для больших экранов?
   //background: white !important;
 }
@@ -8,6 +11,9 @@
   min-height: 100vh;
   width: 50%;
   background: #232323;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 .auth-container{
   min-height: 100vh;
@@ -17,6 +23,13 @@
   height: 100%;
   width: 50%;
   background: #333333;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  @media (max-width: 420px) {
+    width: 100%;
+
+  }
 
 }
 .auth-inputs{
@@ -26,6 +39,10 @@
   flex-direction: column;
   //margin-top: 160px;
   width: 390px;
+  @media (max-width: 420px) {
+    width: 100%;
+    margin: 0 10px;
+  }
 }
 .name-section{
   align-self: center;

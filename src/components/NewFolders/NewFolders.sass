@@ -1,9 +1,14 @@
 .folders-section
   width: 65vw
   margin-bottom: 45px
+  @media (max-width: 1024px)
+    width: 100%
   .folders-wrapper
     display: flex
     justify-content: space-between
+    @media (max-width: 420px)
+      display: block
+      margin-bottom: 32px
   .folders
     //width: 840px // В зависимости от размера экрана
     display: flex

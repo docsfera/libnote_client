@@ -1,8 +1,13 @@
 .notes-section
   width: 65vw
+  @media (max-width: 1024px)
+    width: 100%
   .notes-wrapper
     display: flex
     justify-content: space-between
+    @media (max-width: 420px)
+      display: block
+      margin-bottom: 32px
   .notes
     &:last-child
       margin-bottom: 50px
