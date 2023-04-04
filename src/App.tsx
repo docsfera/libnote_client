@@ -24,15 +24,15 @@ function App() {
                 {/*<Main/>*/}
                 <Routes>
                     <Route path='/' element={<Main/>}/>
-                    <Route path='/books' element={<Books/>}/>
-                    <Route path='/notes' element={<Notes/>}/>
-                    <Route path='/folders' element={<Folders/>}/>
-                    <Route path='/pdf-viewer/:userId' element={<PdfViewer/>}/>
-                    <Route path='/note-creator' element={<NoteCreator/>}/>
-                    <Route path='/note-creator/:id' element={<NoteCreator/>}/>
-                    <Route path='/folder-notes/:id' element={<FolderNotes/>}/>
-                    <Route path='/book-settings/:id' element={<BookSettings/>}/>
-                    <Route path='/settings' element={<UserSettings/>}/>
+                    {/*<Route path='/books' element={<Books/>}/>*/}
+                    {/*<Route path='/notes' element={<Notes/>}/>*/}
+                    {/*<Route path='/folders' element={<Folders/>}/>*/}
+                    {/*<Route path='/pdf-viewer/:userId' element={<PdfViewer/>}/>*/}
+                    {/*<Route path='/note-creator' element={<NoteCreator/>}/>*/}
+                    {/*<Route path='/note-creator/:id' element={<NoteCreator/>}/>*/}
+                    {/*<Route path='/folder-notes/:id' element={<FolderNotes/>}/>*/}
+                    {/*<Route path='/book-settings/:id' element={<BookSettings/>}/>*/}
+                    {/*<Route path='/settings' element={<UserSettings/>}/>*/}
                 </Routes>
             </div>
         }else{
